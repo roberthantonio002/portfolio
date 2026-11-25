@@ -3,35 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b192c">
+  <meta name="author" content="Lucas Mendes">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- SEGURANÇA: o CSS e o JS ficam em arquivos próprios, então não é preciso 'unsafe-inline' -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; script-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self';">
+
+  <title>Lucas Mendes | Contador &amp; Especialista Tributário</title>
   <meta name="description" content="Portfólio Executivo de Lucas Mendes — Contador, Especialista em Planejamento Tributário, Auditoria e Controladoria.">
-  
-  <!-- FAVICON SVG PRÓPRIO (EVITA CACHE DE OUTROS PROJETOS) -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230b192c'/><text x='50' y='66' font-family='sans-serif' font-weight='bold' font-size='44' fill='white' text-anchor='middle'>LM</text></svg>">
 
-  <!-- META TAGS OPEN GRAPH (OTIMIZAÇÃO PARA REDES SOCIAIS / LINKEDIN / WHATSAPP) -->
-  <meta property="og:type" content="profile">
-  <meta property="og:title" content="Lucas Mendes | Contador & Especialista Tributário (CRC-SC)">
-  <meta property="og:description" content="Controladoria estratégica, compliance fiscal e eficiência tributária. Mais de 8 anos de experiência em Lucro Real, Presumido e Auditoria.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1200&q=80">
+  <!-- TROQUE https://SEU-SITE.com.br/ pelo endereço real do site (use Ctrl+H no VS Code e substitua todas as ocorrências) -->
+  <link rel="canonical" href="https://SEU-SITE.com.br/">
+
+  <!-- ÍCONE DA ABA (SVG próprio, já codificado) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%230b192c'/%3E%3Ctext x='50' y='66' font-family='sans-serif' font-weight='bold' font-size='44' fill='white' text-anchor='middle'%3ELM%3C/text%3E%3C/svg%3E">
+
+  <!-- PRÉVIA AO COMPARTILHAR O LINK (LinkedIn, WhatsApp, Facebook, X) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Lucas Mendes">
   <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Lucas Mendes | Contador &amp; Especialista Tributário (CRC-SC)">
+  <meta property="og:description" content="Controladoria estratégica, compliance fiscal e eficiência tributária. Mais de 8 anos de experiência em Lucro Real, Presumido e Auditoria.">
+  <meta property="og:url" content="https://SEU-SITE.com.br/">
+  <!-- Troque pela sua foto real (1200x630, JPG, abaixo de 300 KB) com o endereço completo do seu site -->
+  <meta property="og:image" content="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=80">
+  <meta property="og:image:alt" content="Lucas Mendes, Contador e Especialista Tributário">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Lucas Mendes | Contador & Especialista Tributário">
+  <meta name="twitter:title" content="Lucas Mendes | Contador &amp; Especialista Tributário">
   <meta name="twitter:description" content="Controladoria estratégica, compliance fiscal e eficiência tributária.">
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1200&q=80">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=80">
 
-  <title>Lucas Mendes | Contador & Especialista Tributário</title>
+  <!-- DADOS ESTRUTURADOS PARA O GOOGLE -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Lucas Mendes","jobTitle":"Contador e Especialista em Planejamento Tributário","url":"https://SEU-SITE.com.br/","address":{"@type":"PostalAddress","addressLocality":"Florianópolis","addressRegion":"SC","addressCountry":"BR"},"sameAs":["https://www.linkedin.com/in/lucasmendes-crc"]}
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
 
+  <a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+
   <header class="header">
     <div class="container header-inner">
-      <a href="#" class="brand">
-        <span class="brand-monogram">LM</span>
+      <a href="#resumo" class="brand" aria-label="Lucas Mendes, voltar ao início">
+        <span class="brand-monogram" aria-hidden="true">LM</span>
         <div class="brand-text">
           <strong>Lucas Mendes</strong>
           <span>CRC-SC 045892/O-1</span>
@@ -42,23 +63,23 @@
         <a href="#resumo">Perfil Executivo</a>
         <a href="#experiencia">Experiência</a>
         <a href="#competencias">Competências</a>
-        <a href="#cases">Cases & Resultados</a>
+        <a href="#cases">Cases &amp; Resultados</a>
         <a href="#formacao">Formação</a>
         <a href="#contato" class="nav-cta">Entrar em Contato</a>
       </nav>
 
-      <button type="button" class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+      <button type="button" class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
-  <main>
+  <main id="conteudo">
     <section class="hero" id="resumo">
       <div class="container hero-grid">
         <div class="hero-content">
           <div class="status-pill">
-            <span class="status-dot"></span> Disponível para posições de Controladoria, Consultoria Tributária e Auditoria
+            <span class="status-dot" aria-hidden="true"></span> Disponível para posições de Controladoria, Consultoria Tributária e Auditoria
           </div>
 
           <h1>Controladoria estratégica, compliance fiscal e eficiência tributária.</h1>
@@ -90,7 +111,8 @@
 
         <div class="hero-profile">
           <div class="profile-frame">
-            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80" alt="Lucas Mendes, Contador e Especialista Tributário">
+            <!-- Troque pela sua foto real, por exemplo: image/foto.jpg -->
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Lucas Mendes, Contador e Especialista Tributário" width="800" height="920" fetchpriority="high" decoding="async">
             <div class="profile-badge">
               <strong>Lucas Mendes, CRC-SC</strong>
               <span>Florianópolis, SC • Modelo Híbrido ou Remoto</span>
@@ -104,7 +126,7 @@
       <div class="container">
         <div class="section-head">
           <span class="eyebrow">Trajetória Profissional</span>
-          <h2>Experiência & Realizações</h2>
+          <h2>Experiência &amp; Realizações</h2>
           <p>Histórico progressivo com foco em governança, fechamento contábil e inteligência fiscal.</p>
         </div>
 
@@ -112,7 +134,7 @@
           <article class="exp-card">
             <div class="exp-meta">
               <span class="exp-period">2022 — Atual</span>
-              <span class="exp-company">Vértice Consultoria & Auditoria Corporativa</span>
+              <span class="exp-company">Vértice Consultoria &amp; Auditoria Corporativa</span>
               <span class="exp-location">Florianópolis, SC</span>
             </div>
             <div class="exp-details">
@@ -161,13 +183,13 @@
       <div class="container">
         <div class="section-head">
           <span class="eyebrow">Domínio Técnico</span>
-          <h2>Competências & Stack Contábil</h2>
+          <h2>Competências &amp; Stack Contábil</h2>
           <p>Alinhamento entre profundo conhecimento normativo e domínio de sistemas corporativos.</p>
         </div>
 
         <div class="skills-grid">
           <div class="skill-box">
-            <h3>Normas & Legislação</h3>
+            <h3>Normas &amp; Legislação</h3>
             <ul>
               <li>Normas Brasileiras de Contabilidade (NBC / CPC / IFRS)</li>
               <li>Regimes Tributários: Lucro Real, Lucro Presumido e Simples Nacional</li>
@@ -187,7 +209,7 @@
           </div>
 
           <div class="skill-box">
-            <h3>Sistemas, ERPs & Tecnologia</h3>
+            <h3>Sistemas, ERPs &amp; Tecnologia</h3>
             <div class="tag-cloud">
               <span class="tech-tag">SAP S/4HANA</span>
               <span class="tech-tag">TOTVS Protheus</span>
@@ -206,7 +228,7 @@
       <div class="container">
         <div class="section-head">
           <span class="eyebrow">Resultados Comprovados</span>
-          <h2>Estudos de Caso & Projetos</h2>
+          <h2>Estudos de Caso &amp; Projetos</h2>
           <p>Exemplos práticos de problemas resolvidos e valor gerado para as organizações.</p>
         </div>
 
@@ -223,7 +245,7 @@
 
           <article class="case-card">
             <div>
-              <span class="case-category">Controladoria & BI</span>
+              <span class="case-category">Controladoria &amp; BI</span>
               <h3>Automação de Fechamento e DRE Gerencial</h3>
               <p><strong>Desafio:</strong> Diretoria recebia resultados consolidados apenas no dia 20 do mês seguinte, atrasando decisões de caixa.</p>
               <p><strong>Solução:</strong> Padronização do plano de contas, integração via Power Query e criação de painel executivo automatizado.</p>
@@ -234,7 +256,7 @@
           <article class="case-card">
             <div>
               <span class="case-category">Recuperação de Créditos</span>
-              <h3>Auditoria de Créditos Previdenciários e Fiscais</h3>
+              <h3>Auditoria e Recuperação de Créditos Tributários Federais</h3>
               <p><strong>Desafio:</strong> Pagamento a maior de tributos federais nos últimos 60 meses por parametrização incorreta de NCMs.</p>
               <p><strong>Solução:</strong> Cruzamento eletrônico de arquivos XML de notas fiscais contra as obrigações transmitidas (SPED).</p>
             </div>
@@ -248,7 +270,7 @@
       <div class="container edu-grid">
         <div>
           <span class="eyebrow">Qualificação</span>
-          <h2>Formação & Credenciais</h2>
+          <h2>Formação &amp; Credenciais</h2>
           <p class="edu-intro">Base acadêmica sólida aliada à educação continuada exigida pelo Conselho Federal de Contabilidade (EPC).</p>
         </div>
 
@@ -278,7 +300,7 @@
           </div>
 
           <div class="edu-item">
-            <span class="edu-year">Idiomas & Registros</span>
+            <span class="edu-year">Idiomas &amp; Registros</span>
             <div>
               <h3>CRC-SC Ativo • Inglês Avançado (Leitura técnica e relatórios IFRS)</h3>
               <p>Pontuação regular no Programa de Educação Profissional Continuada (PEPC/CFC)</p>
@@ -296,15 +318,16 @@
             <h2>Disponível para conversas sobre oportunidades e projetos.</h2>
             <p>Caso meu perfil esteja alinhado aos desafios da sua equipe financeira ou escritório, preencha o formulário ao lado ou utilize os canais diretos.</p>
 
+            <!-- Se trocar o telefone, troque em "tel:" e em "wa.me" (o script.js mantém o botão do WhatsApp igual ao telefone) -->
             <ul class="contact-channels">
-              <li><strong>E-mail:</strong> lucas.mendes@contabilidadeexec.com.br</li>
-              <li><strong>Telefone / WhatsApp:</strong> (48) 99999-0000</li>
-              <li><strong>LinkedIn:</strong> linkedin.com/in/lucasmendes-crc</li>
+              <li><strong>E-mail:</strong> <a href="mailto:lucas.mendes@contabilidadeexec.com.br" id="emailLink">lucas.mendes@contabilidadeexec.com.br</a></li>
+              <li><strong>Telefone / WhatsApp:</strong> <a href="tel:+5548999990000" id="phoneLink">(48) 99999-0000</a></li>
+              <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/lucasmendes-crc" target="_blank" rel="noopener noreferrer">linkedin.com/in/lucasmendes-crc</a></li>
               <li><strong>Localização:</strong> Florianópolis, SC (Híbrido ou Remoto)</li>
             </ul>
 
             <div class="quick-actions">
-              <button type="button" id="whatsappBtn" class="btn btn-accent">WhatsApp Direto</button>
+              <a id="whatsappBtn" class="btn btn-accent" href="https://wa.me/5548999990000?text=Ol%C3%A1%20Lucas%2C%20analisei%20seu%20portf%C3%B3lio%20profissional%20e%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade." target="_blank" rel="noopener noreferrer">WhatsApp Direto</a>
               <button type="button" id="copyEmailBtn" class="btn btn-outline-light">Copiar E-mail</button>
             </div>
             <span class="copy-feedback" id="copyFeedback" role="status" aria-live="polite"></span>
@@ -315,11 +338,11 @@
             <form id="recruiterForm">
               <div class="form-group">
                 <label for="senderName">Nome / Empresa</label>
-                <input type="text" id="senderName" name="name" class="form-control" placeholder="Ex: Mariana Silva — RH Grupo Alfa" required>
+                <input type="text" id="senderName" name="name" class="form-control" placeholder="Ex: Mariana Silva — RH Grupo Alfa" maxlength="80" autocomplete="name" required>
               </div>
               <div class="form-group">
                 <label for="senderEmail">E-mail Corporativo</label>
-                <input type="email" id="senderEmail" name="email" class="form-control" placeholder="mariana@empresa.com.br" required>
+                <input type="email" id="senderEmail" name="email" class="form-control" placeholder="mariana@empresa.com.br" maxlength="100" autocomplete="email" required>
               </div>
               <div class="form-group">
                 <label for="senderSubject">Assunto</label>
@@ -331,11 +354,13 @@
               </div>
               <div class="form-group">
                 <label for="senderMessage">Mensagem</label>
-                <textarea id="senderMessage" name="message" class="form-control" placeholder="Descreva brevemente a oportunidade ou projeto..." required></textarea>
+                <textarea id="senderMessage" name="message" class="form-control" placeholder="Descreva brevemente a oportunidade ou projeto..." maxlength="600" required></textarea>
               </div>
               <button type="submit" class="btn btn-accent full-width" id="submitFormBtn">Enviar Mensagem</button>
               <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+              <p class="form-note">Ao enviar, abrimos o seu aplicativo de e-mail com a mensagem pronta. Nenhum dado é armazenado neste site.</p>
             </form>
+            <noscript><p class="form-note">Ative o JavaScript para usar o formulário ou escreva diretamente para o e-mail ao lado.</p></noscript>
           </div>
         </div>
       </div>
@@ -347,7 +372,7 @@
       <div>
         <strong>Lucas Mendes</strong> • Contador CRC-SC 045892/O-1
       </div>
-      <p>© <span id="year">2026</span> • Portfólio Profissional Executivo.</p>
+      <p>© <span id="year">2026</span> • Portfólio Profissional Executivo. <a href="#resumo">Voltar ao topo</a></p>
     </div>
   </footer>
 
